@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Kaviya Sri V — AI/ML Engineer</title>
+  <meta name="description" content="Portfolio of Kaviya Sri V, AI/ML engineering student building machine learning systems and learning cloud deployment." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="nav">
+    <div class="nav-inner">
+      <a class="brand" href="#home">KS<span class="brand-dot">.</span></a>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <section id="home" class="hero">
+      <svg class="hero-grid" viewBox="0 0 400 400" aria-hidden="true" focusable="false">
+        <g class="net">
+          <line x1="60" y1="80" x2="180" y2="40" />
+          <line x1="180" y1="40" x2="300" y2="100" />
+          <line x1="60" y1="80" x2="140" y2="200" />
+          <line x1="180" y1="40" x2="140" y2="200" />
+          <line x1="300" y1="100" x2="260" y2="220" />
+          <line x1="140" y1="200" x2="260" y2="220" />
+          <line x1="140" y1="200" x2="100" y2="320" />
+          <line x1="260" y1="220" x2="220" y2="340" />
+          <line x1="260" y1="220" x2="340" y2="280" />
+        </g>
+        <g class="nodes">
+          <circle cx="60" cy="80" r="5" />
+          <circle cx="180" cy="40" r="6" />
+          <circle cx="300" cy="100" r="5" />
+          <circle cx="140" cy="200" r="7" />
+          <circle cx="260" cy="220" r="6" />
+          <circle cx="100" cy="320" r="5" />
+          <circle cx="220" cy="340" r="5" />
+          <circle cx="340" cy="280" r="5" />
+        </g>
+      </svg>
+
+      <div class="hero-content">
+        <p class="eyebrow">ai / ml engineer — learning cloud &amp; devops</p>
+        <h1>Hi, I'm Kaviya Sri<span class="accent-dot">.</span></h1>
+        <p class="hero-sub">I build machine learning systems — a face-recognition attendance tool, a diabetes-risk monitor, a fraud-detection model — and I'm now extending that into the cloud: learning to actually deploy and host what I build, not just train it.</p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary">View projects <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+          <a href="#contact" class="btn btn-ghost">Get in touch</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="about">
+      <div class="about-text">
+        <p class="eyebrow">about</p>
+        <h2>A curious builder, still early in the stack.</h2>
+        <p>Motivated AI/ML graduate with strong adaptability and a deep curiosity for learning emerging technologies. I like understanding how a system works end to end, then finding where I can make it better.</p>
+        <p>I'm currently pursuing a B.Tech in Artificial Intelligence &amp; Machine Learning at Panimalar Engineering College, and recently completed a Machine Learning internship covering deep learning, statistics, image processing, and applied data visualization.</p>
+      </div>
+      <dl class="about-meta">
+        <div><dt>role</dt><dd>AI/ML engineering student</dd></div>
+        <div><dt>focus</dt><dd>machine learning · computer vision</dd></div>
+        <div><dt>education</dt><dd>B.Tech AI &amp; ML, Panimalar Engineering College</dd></div>
+        <div><dt>cgpa</dt><dd>8.86</dd></div>
+        <div><dt>currently_learning</dt><dd>AWS S3 · CloudFront · Git &amp; GitHub</dd></div>
+        <div><dt>status</dt><dd>open to internships</dd></div>
+      </dl>
+    </section>
+
+    <section id="skills" class="skills">
+      <p class="eyebrow">skills</p>
+      <h2>Tools I reach for.</h2>
+      <ul class="pill-list">
+        <li><i class="fa-brands fa-python" aria-hidden="true"></i> Python</li>
+        <li><i class="fa-brands fa-java" aria-hidden="true"></i> Java</li>
+        <li><i class="fa-solid fa-database" aria-hidden="true"></i> SQL</li>
+        <li><i class="fa-brands fa-html5" aria-hidden="true"></i> HTML</li>
+        <li><i class="fa-brands fa-css3-alt" aria-hidden="true"></i> CSS</li>
+      </ul>
+      <p class="skills-note">Currently learning: <span>AWS S3</span> · <span>CloudFront</span> · <span>Git &amp; GitHub</span></p>
+    </section>
+
+    <section id="projects" class="projects">
+      <p class="eyebrow">projects</p>
+      <h2>Things I've shipped.</h2>
+      <div class="card-grid">
+
+        <article class="card">
+          <div class="card-bar">
+            <span class="dot dot-1"></span><span class="dot dot-2"></span><span class="dot dot-3"></span>
+            <span class="card-file">smart_attendance.py</span>
+          </div>
+          <h3>Smart attendance system</h3>
+          <p>A face-recognition attendance tool built with OpenCV. It captures faces from a webcam, registers new people by name, and logs name, date, and entry time straight into a MySQL database.</p>
+          <p class="card-meta">stack: Python · OpenCV · MySQL</p>
+        </article>
+
+        <article class="card">
+          <div class="card-bar">
+            <span class="dot dot-1"></span><span class="dot dot-2"></span><span class="dot dot-3"></span>
+            <span class="card-file">diabetes_guard.py</span>
+          </div>
+          <h3>Diabetes Guard</h3>
+          <p>An early diabetes-risk monitor built with Flask. It tracks daily food intake, analyzes nutritional data using glycemic index, and gives personalized eating recommendations based on risk level.</p>
+          <p class="card-meta">stack: Python · Flask</p>
+        </article>
+
+        <article class="card">
+          <div class="card-bar">
+            <span class="dot dot-1"></span><span class="dot dot-2"></span><span class="dot dot-3"></span>
+            <span class="card-file">fraud_detection.ipynb</span>
+          </div>
+          <h3>Credit card fraud detection</h3>
+          <p>Capstone project from my ML internship: large-scale preprocessing and an XGBoost model trained to flag fraudulent transactions in financial datasets, tuned through systematic hyperparameter search.</p>
+          <p class="card-meta">stack: Python · XGBoost · Pandas</p>
+        </article>
+
+      </div>
+    </section>
+
+    <section class="strip">
+      <p class="eyebrow">certifications &amp; recognition</p>
+      <ul class="badge-list">
+        <li><i class="fa-solid fa-award" aria-hidden="true"></i> NPTEL — Java, Python data analytics, machine learning</li>
+        <li><i class="fa-solid fa-award" aria-hidden="true"></i> Wadhwani Foundation — employability &amp; self-presentation</li>
+        <li><i class="fa-solid fa-award" aria-hidden="true"></i> Infosys Springboard — frontend dev (HTML5/CSS3), BI &amp; data modeling</li>
+        <li><i class="fa-solid fa-trophy" aria-hidden="true"></i> 22nd place — International Conference 2025</li>
+      </ul>
+    </section>
+
+  </main>
+
+  <footer id="contact" class="footer">
+    <div class="footer-inner">
+      <div>
+        <p class="eyebrow">contact</p>
+        <h2>Let's connect.</h2>
+      </div>
+      <ul class="contact-list">
+        <li><a href="mailto:kavyasrivasu2007@gmail.com"><i class="fa-solid fa-envelope" aria-hidden="true"></i> kavyasrivasu2007@gmail.com</a></li>
+        <li><a href="tel:+918015276330"><i class="fa-solid fa-phone" aria-hidden="true"></i> +91 80152 76330</a></li>
+        <li><a href="https://www.linkedin.com/in/kavyasri1503" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin" aria-hidden="true"></i> linkedin.com/in/kavyasri1503</a></li>
+      </ul>
+    </div>
+    <p class="copyright">© 2026 Kaviya Sri V. Built and deployed as part of a cloud computing &amp; DevOps internship task.</p>
+  </footer>
+
+</body>
+</html>
