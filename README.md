@@ -1,126 +1,133 @@
-# AWS S3 + CloudFront Portfolio Website | Docker & EC2 Deployment
+# 🌐 My Portfolio Website
 
-## Objective
+A personal portfolio website showcasing my projects, skills, and learning journey in AI/ML and Cloud Computing.
 
-Host a static portfolio website using AWS S3 and CloudFront, then containerize and deploy the application using Docker on an AWS EC2 instance.
+## 🚀 Live Demo
 
-## Technologies Used
+### AWS S3 + CloudFront
+https://dqx8968lavlu5.cloudfront.net
 
-* HTML
-* CSS
-* Git
-* GitHub
-* AWS S3
-* AWS CloudFront
-* Docker
-* AWS EC2
-* Ubuntu Linux
+### AWS EC2 (Docker Deployment)
+http://YOUR-EC2-PUBLIC-IP
 
-## Features
+---
 
-* Responsive Portfolio
-* Hero Section
-* About Section
-* Project Cards
-* Contact Section
-* HTTPS Delivery via CloudFront
-* Docker Containerization
-* Cloud Deployment using AWS EC2
-* Public Access via EC2 Instance
+# 🛠 Technologies Used
 
-## Task 1: S3 + CloudFront Deployment
+- HTML5
+- CSS3
+- Docker
+- Git & GitHub
+- GitHub Actions
+- Docker Hub
+- AWS S3
+- AWS CloudFront
+- AWS EC2
 
-### Deployment Steps
+---
 
-1. Created portfolio website using HTML/CSS.
-2. Uploaded source code to GitHub.
-3. Hosted website on AWS S3.
-4. Configured CloudFront for HTTPS delivery.
+# ✨ Features
 
-## Task 2: Docker + EC2 Deployment
+- Responsive portfolio website
+- Project showcase
+- Skills section
+- Contact information
+- Static website hosting on AWS S3
+- Global content delivery using CloudFront
+- Dockerized application
+- Hosted on AWS EC2
+- Automated Docker image build and push using GitHub Actions
 
-### Deployment Steps
+---
 
-1. Installed Docker Desktop on Windows.
-2. Created a Dockerfile for the portfolio website.
-3. Built a Docker image using Nginx.
-4. Ran the website locally in a Docker container.
-5. Created an Ubuntu EC2 instance on AWS.
-6. Installed Docker on the EC2 server.
-7. Cloned the GitHub repository to EC2.
-8. Built the Docker image on EC2.
-9. Ran the Docker container on EC2.
-10. Accessed the portfolio website through the EC2 public IP.
+# 📂 Project Structure
 
-## Docker Commands Used
-
-### Build Docker Image
-
-```bash
-docker build -t portfolio-website .
+```
+portfolio/
+│
+├── .github/
+│   └── workflows/
+│       └── docker.yml
+│
+├── images/
+├── index.html
+├── style.css
+├── Dockerfile
+└── README.md
 ```
 
-### Run Docker Container
+---
 
-```bash
-docker run -d -p 8080:80 --name portfolio-container portfolio-website
+# ☁️ Cloud Deployment Journey
+
+## Task 1
+- Hosted portfolio on AWS S3
+- Enabled Static Website Hosting
+- Configured Bucket Policy
+- Distributed website using CloudFront CDN
+
+## Task 2
+- Dockerized the portfolio
+- Created Docker image
+- Tested locally
+- Pushed source code to GitHub
+- Deployed Docker container on AWS EC2
+
+## Task 3
+- Created Docker Hub repository
+- Generated Docker Hub Access Token
+- Configured GitHub Secrets
+- Created GitHub Actions workflow
+- Automated Docker image build
+- Automated Docker image push to Docker Hub using CI/CD
+
+---
+
+# ⚙️ CI/CD Workflow
+
+```
+Code Changes
+      │
+      ▼
+Git Push
+      │
+      ▼
+GitHub Actions
+      │
+      ▼
+Build Docker Image
+      │
+      ▼
+Push Image to Docker Hub
 ```
 
-### List Images
+---
 
-```bash
-docker images
-```
+# 📚 Learning Outcomes
 
-### List Running Containers
+Through this project, I gained practical experience in:
 
-```bash
-docker ps
-```
+- Docker
+- Containerization
+- AWS S3
+- CloudFront
+- AWS EC2
+- GitHub Actions
+- CI/CD Automation
+- Docker Hub
+- Cloud Deployment
+- DevOps Fundamentals
 
-## EC2 Deployment Commands
+---
 
-### Update Ubuntu
+# 👩‍💻 Author
 
-```bash
-sudo apt update
-```
+**Kaviya Sri**
 
-### Install Docker
+AI & ML Engineering Student
 
-```bash
-sudo apt install docker.io -y
-```
+GitHub:
+https://github.com/kavya0307
 
-### Clone Repository
-
-```bash
-git clone https://github.com/kavya0307/my-portfolio.git
-```
-
-### Build Image on EC2
-
-```bash
-sudo docker build -t portfolio-website .
-```
-
-### Run Container on EC2
-
-```bash
-sudo docker run -d -p 80:80 --name portfolio-container portfolio-website
-```
-
-## Learning Outcomes
-
-* Static Website Hosting with AWS S3
-* Content Delivery using CloudFront
-* Version Control with Git & GitHub
-* Docker Containerization
-* Linux Server Management
-* AWS EC2 Deployment
-* Basic DevOps Workflow
-* Cloud Application Deployment
-
-## Author
-
-Kavya
+LinkedIn:
+(Add your LinkedIn profile here)
