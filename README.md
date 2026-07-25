@@ -130,4 +130,4 @@ GitHub:
 https://github.com/kavya0307
 
 LinkedIn:
-(Add your LinkedIn profile here)
+linkedin.com/in/kavyasri1503
