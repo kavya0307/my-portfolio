@@ -1,13 +1,13 @@
-# 🌐 My Portfolio Website
+# 🌐 Portfolio Website - Dockerized Deployment with Nginx Reverse Proxy
 
-A personal portfolio website showcasing my projects, skills, and learning journey in AI/ML and Cloud Computing.
+A personal portfolio website showcasing my projects, technical skills, certifications, and achievements. This project demonstrates modern cloud deployment practices by hosting a Dockerized web application on an AWS EC2 instance with Nginx configured as a reverse proxy.
 
-## 🚀 Live Demo
+---
 
-### AWS S3 + CloudFront
-https://dqx8968lavlu5.cloudfront.net
+# 🚀 Live Demo
 
-### AWS EC2 (Docker Deployment)
+### AWS EC2 + Docker + Nginx
+
 http://YOUR-EC2-PUBLIC-IP
 
 ---
@@ -17,26 +17,27 @@ http://YOUR-EC2-PUBLIC-IP
 - HTML5
 - CSS3
 - Docker
-- Git & GitHub
+- Nginx
+- Git
+- GitHub
 - GitHub Actions
 - Docker Hub
-- AWS S3
-- AWS CloudFront
 - AWS EC2
+- Linux (Ubuntu)
 
 ---
 
 # ✨ Features
 
 - Responsive portfolio website
-- Project showcase
-- Skills section
-- Contact information
-- Static website hosting on AWS S3
-- Global content delivery using CloudFront
-- Dockerized application
+- Dockerized web application
 - Hosted on AWS EC2
-- Automated Docker image build and push using GitHub Actions
+- Nginx Reverse Proxy configuration
+- Automated Docker image build using GitHub Actions
+- Docker Hub integration
+- Cloud-based deployment
+- Linux server management
+- SSH-based server access
 
 ---
 
@@ -53,37 +54,110 @@ portfolio/
 ├── index.html
 ├── style.css
 ├── Dockerfile
-└── README.md
+├── README.md
+└── assets/
 ```
 
 ---
 
-# ☁️ Cloud Deployment Journey
+# ☁️ Project Deployment Workflow
 
-## Task 1
-- Hosted portfolio on AWS S3
-- Enabled Static Website Hosting
-- Configured Bucket Policy
-- Distributed website using CloudFront CDN
-
-## Task 2
-- Dockerized the portfolio
-- Created Docker image
-- Tested locally
-- Pushed source code to GitHub
-- Deployed Docker container on AWS EC2
-
-## Task 3
-- Created Docker Hub repository
-- Generated Docker Hub Access Token
-- Configured GitHub Secrets
-- Created GitHub Actions workflow
-- Automated Docker image build
-- Automated Docker image push to Docker Hub using CI/CD
+```
+Developer
+      │
+      ▼
+Git Push
+      │
+      ▼
+GitHub Repository
+      │
+      ▼
+GitHub Actions
+      │
+      ▼
+Build Docker Image
+      │
+      ▼
+Push Image to Docker Hub
+      │
+      ▼
+AWS EC2 Instance
+      │
+      ▼
+Docker Container
+      │
+      ▼
+Nginx Reverse Proxy
+      │
+      ▼
+Portfolio Website
+```
 
 ---
 
-# ⚙️ CI/CD Workflow
+# 🐳 Docker Deployment
+
+- Created a Dockerfile for the portfolio website
+- Built the Docker image
+- Executed the application inside a Docker container
+- Exposed the container using port mapping
+- Verified application deployment inside the EC2 instance
+
+Example:
+
+```
+docker build -t portfolio-website .
+
+docker run -d -p 8080:80 --name portfolio-container portfolio-website
+```
+
+---
+
+# 🌐 Nginx Reverse Proxy
+
+Configured Nginx to act as a reverse proxy between the client and the Docker container.
+
+Workflow:
+
+```
+Internet
+      │
+      ▼
+Nginx (Port 80)
+      │
+      ▼
+Docker Container (Port 8080)
+      │
+      ▼
+Portfolio Website
+```
+
+Benefits:
+
+- Routes incoming HTTP requests
+- Improves security
+- Simplifies application access
+- Supports future scalability
+
+---
+
+# 🔐 Secure Deployment
+
+Implemented secure deployment practices by using:
+
+- SSH key-based authentication
+- GitHub Secrets
+- Docker Hub Access Token
+
+Sensitive credentials are securely stored in GitHub Secrets and are never exposed in the repository.
+
+---
+
+# ⚙️ CI/CD Pipeline
+
+Implemented Continuous Integration using GitHub Actions.
+
+Pipeline Flow:
 
 ```
 Code Changes
@@ -98,7 +172,7 @@ GitHub Actions
 Build Docker Image
       │
       ▼
-Push Image to Docker Hub
+Push Docker Image to Docker Hub
 ```
 
 ---
@@ -107,11 +181,12 @@ Push Image to Docker Hub
 
 Through this project, I gained practical experience in:
 
-- Docker
-- Containerization
-- AWS S3
-- CloudFront
+- Docker Containerization
+- Linux Server Administration
 - AWS EC2
+- Nginx Reverse Proxy
+- Port Mapping
+- SSH Authentication
 - GitHub Actions
 - CI/CD Automation
 - Docker Hub
@@ -120,14 +195,37 @@ Through this project, I gained practical experience in:
 
 ---
 
+# 🎯 Key Concepts Learned
+
+- Difference between Public Port and Container Port
+- Reverse Proxy Architecture
+- Docker Image and Container Lifecycle
+- Linux Server Configuration
+- SSH Key Authentication
+- GitHub Secrets
+- Automated Deployment Workflow
+- Cloud-based Application Hosting
+
+---
+
+# 📖 Future Enhancements
+
+- Configure HTTPS using SSL/TLS
+- Deploy using a custom domain
+- Implement Continuous Deployment (CD)
+- Add monitoring and logging
+- Container orchestration using Kubernetes
+
+---
+
 # 👩‍💻 Author
 
 **Kaviya Sri**
 
-AI & ML Engineering Student
+B.Tech - Artificial Intelligence and Machine Learning
 
 GitHub:
 https://github.com/kavya0307
 
 LinkedIn:
-(Add your LinkedIn profile here)
+https://www.linkedin.com/in/kavyasri1503
